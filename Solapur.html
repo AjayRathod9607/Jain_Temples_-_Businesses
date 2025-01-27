@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathwada Region - Solapur City</title>
+    
+</head>
+<style>
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    background-color: #ff0048;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    gap: 20px;
+}
+
+.left,
+.right {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.left:hover,
+.right:hover {
+    transform: scale(1.05);
+    /* Slightly zoom in on hover */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.business,
+.temple {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.business img,
+.temple img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.business:hover img,
+.temple:hover img {
+    transform: scale(1.05);
+    /* Zoom effect on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    color: #ff00c3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mouse Follow Effect */
+.follow-pointer {
+    position: absolute;
+    pointer-events: none;
+    transition: transform 0.1s ease;
+    width: 20px;
+    height: 20px;
+    background-color: #0ad6ff;
+    border-radius: 50%;
+}
+
+/* Button Click Effect */
+button:active,
+a:active,
+img:active {
+    transform: scale(0.95);
+    /* Slight shrink on click */
+    transition: transform 0.1s ease-out;
+}
+
+/* Parallax Effect (Background move with mouse) */
+body {
+    background-image: url('your-image.jpg');
+    /* Replace with your background image */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Footer Styling */
+footer {
+    background-color:#ff0048;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #06d7f7;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+</style>
+<body>
+    <header>
+        <h1>Solapur City</h1>
+    </header>
+
+    <div class="container">
+        <!-- Left Section: Local Businesses -->
+        <div class="left">
+            <h2>Local Businesses under Marathwada</h2>
+
+            <!-- Business 1 -->
+            <div class="business">
+                <h3>Amruta Dairy & Milk Products</h3>
+                <img src="https://www.open.edu/openlearn/pluginfile.php/629522/mod_oucontent/oucontent/26977/d9d284c1/ad44fc8c/b100_blk01_r02_f03.tif.jpg"
+                    alt="Business Image">
+                <ul>
+                    <li><strong>Contact:</strong> +1234567890</li>
+                    <li><strong>Address:</strong> 123 Business St., City</li>
+                    <li><strong>Email:</strong> business1@example.com</li>
+                    <li><strong>Type of Business:</strong> Retail</li>
+                    <li><strong>Portfolio/Social Media:</strong> <a href="http://business1socialmedia.com">Visit</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Business 2 -->
+            <div class="business">
+                <h3>Kapse Furnitures & Home Appliances</h3>
+                <img src="https://djcs-prod.s3.amazonaws.com/public/blogs/deloitte/blogs.dir/5/files/2024/01/2024-India-Outlook-IMAGE.jpg"
+                    alt="Business Image">
+                <ul>
+                    <li><strong>Contact:</strong> +0987654321</li>
+                    <li><strong>Address:</strong> 456 Market Rd., City</li>
+                    <li><strong>Email:</strong> business2@example.com</li>
+                    <li><strong>Type of Business:</strong> Restaurant</li>
+                    <li><strong>Portfolio/Social Media:</strong> <a href="http://business2socialmedia.com">Visit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right Section: Jain Temples -->
+        <div class="right">
+            <h2>Jain Temples Under Marathwada</h2>
+
+            <!-- Temple 1 -->
+            <div class="temple">
+                <h3>Parshwanath Shwetambar Jain Temple, Pune.</h3>
+                <img src="https://tripxl.com/blog/wp-content/uploads/2024/10/Parshwanath-Shwetambar-Jain-Temple-Pune.jpg"
+                    alt="Temple Image">
+                <ul>
+                    <li><strong>Address:</strong> 456 Temple Rd., City</li>
+                    <li><strong>Established:</strong> 1800</li>
+                    <li><strong>Timings:</strong> 6:00 AM - 8:00 PM</li>
+                    <li><strong>Details:</strong> <a href="http://temple1.com">Visit</a></li>
+                </ul>
+            </div>
+
+            <!-- Temple 2 -->
+            <div class="temple">
+                <h3>Antariksh Parshwanath Jain Temple, Shirpur</h3>
+                <img src="https://tripxl.com/blog/wp-content/uploads/2024/10/Antariksh-Parshwanath-Jain-Temple-Shirpur.jpg"
+                    alt="Temple Image">
+                <ul>
+                    <li><strong>Address:</strong> 789 Temple Ln., City</li>
+                    <li><strong>Established:</strong> 1900</li>
+                    <li><strong>Timings:</strong> 5:00 AM - 7:00 PM</li>
+                    <li><strong>Details:</strong> <a href="http://temple2.com">Visit</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mouse Follow Pointer Animation -->
+    <div class="follow-pointer"></div>
+
+    <footer>
+        <p>&copy; 2025 City Name - Marathwada Region. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        // JavaScript to make elements follow the mouse
+        document.addEventListener("mousemove", function (e) {
+            const pointerElement = document.querySelector(".follow-pointer");
+            pointerElement.style.left = e.pageX + "px";
+            pointerElement.style.top = e.pageY + "px";
+        });
+
+        // JavaScript for Parallax Effect (Background move with mouse)
+        document.addEventListener("mousemove", function (e) {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            document.body.style.backgroundPosition = `${x * 100}% ${y * 100}%`;
+        });
+    </script>
+</body>
+
+</html>
